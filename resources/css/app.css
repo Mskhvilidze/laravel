@@ -1,0 +1,78 @@
+.footer ul{
+    position: relative;
+    display:flex;  
+    list-style:none;
+    color: white;
+    margin-left: 2em;
+}
+
+.footer a{
+    color: white;
+}
+
+.dad{
+    height: calc(30% - 50px);
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    display: flex;
+    overflow: scroll;
+    width: calc(50% - 50px);
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    margin: calc(25% - 25px) calc(30% - 30px);
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    display: flex;
+    overflow: scroll;
+    position: absolute;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    display: flex;
+    visibility: visible;
+  }
+  
+  
+
+@media screen and (max-width: 1200px) {
+	.footer {
+		justify-content: center;
+	}
+
+    .footer-block {
+        width: 100%;
+        display: inline-flex;
+    }
+}
